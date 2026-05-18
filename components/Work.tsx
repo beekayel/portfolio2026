@@ -69,17 +69,6 @@ const ROLES: Role[] = [
     ]
   },
   {
-    company: "Resourceful Humans",
-    position: "Entrepreneur in Residence",
-    location: "Berlin, Germany",
-    dates: "Mar 2022 — Sep 2022",
-    logo: "/logos/rh.png",
-    bullets: [
-      "Managed Google Ads end-to-end, driving a 360% traffic increase.",
-      "Oversaw the SEO team and branding direction across all platforms."
-    ]
-  },
-  {
     company: "Fishing in Lappland",
     position: "Marketing Manager & Web Developer",
     location: "Storuman, Sweden",
