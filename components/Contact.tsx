@@ -113,7 +113,7 @@ function Field({
   type?: string;
   textarea?: boolean;
   required?: boolean;
-  state: { errors?: unknown };
+  state: { errors?: React.ComponentProps<typeof ValidationError>["errors"] };
 }) {
   const base =
     "w-full bg-white/55 hover:bg-white/70 focus:bg-white/85 border border-[var(--color-line-strong)] focus:border-[var(--color-bronze)] rounded-xl outline-none px-4 py-3 text-[var(--color-text)] placeholder-[var(--color-text-low)] transition-colors";
@@ -127,11 +127,10 @@ function Field({
       ) : (
         <input name={name} type={type} required={required} className={base} placeholder=" " />
       )}
-      {/* @ts-expect-error formspree state typing */}
       <ValidationError
         prefix={label}
         field={name}
-        errors={state.errors}
+        errors={state.errors ?? null}
         className="text-xs text-red-600 mt-1 block"
       />
     </label>
