@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+@theme {
+  /* Cream theme — light background, warm dark text */
+  --color-bg: #f5eedd;
+  --color-bg-2: #ede4cd;
+  --color-bg-3: #e3d8bd;
+  --color-text: #1a160e;
+  --color-text-dim: #4a4135;
+  --color-text-low: #847a66;
+  --color-bronze: #b07a45;
+  --color-bronze-deep: #8a5d33;
+  --color-line: rgba(26, 22, 14, 0.12);
+  --color-line-strong: rgba(26, 22, 14, 0.22);
+
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-instrument);
+  --font-mono: var(--font-mono);
+}
+
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "ss01", "ss02";
+}
+
+::selection {
+  background: var(--color-bronze);
+  color: var(--color-bg);
+}
+
+.display {
+  font-family: var(--font-display);
+  font-feature-settings: "ss01";
+  font-variation-settings: "opsz" 144, "SOFT" 50;
+  letter-spacing: -0.02em;
+  line-height: 0.98;
+}
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-variation-settings: "opsz" 14;
+  color: var(--color-bronze-deep);
+  letter-spacing: 0.04em;
+  font-size: 0.95rem;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum", "zero";
+}
+
+.rule {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-line-strong) 20%,
+    var(--color-line-strong) 80%,
+    transparent
+  );
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 1px solid var(--color-bronze);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.85rem 1.4rem;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  letter-spacing: 0.01em;
+  transition: all 250ms ease;
+  border: 1px solid var(--color-line-strong);
+}
+.btn-primary {
+  background: var(--color-bronze);
+  color: var(--color-bg);
+  border-color: var(--color-bronze);
+}
+.btn-primary:hover {
+  background: var(--color-bronze-deep);
+  border-color: var(--color-bronze-deep);
+}
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--color-text);
+}
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.75);
+  border-color: var(--color-bronze);
+}
+
+/* LinkedIn button — soft bronze glow */
+.btn-linkedin {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--color-text);
+  border-color: rgba(176, 122, 69, 0.35);
+  box-shadow:
+    0 0 0 1px rgba(176, 122, 69, 0.08),
+    0 6px 24px -8px rgba(176, 122, 69, 0.5);
+  transition: all 300ms ease;
+}
+.btn-linkedin:hover {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: var(--color-bronze);
+  box-shadow:
+    0 0 0 1px rgba(176, 122, 69, 0.2),
+    0 10px 36px -6px rgba(176, 122, 69, 0.7);
+  transform: translateY(-1px);
+}
+
+/* Glass card */
+.glass {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    0 12px 40px -16px rgba(26, 22, 14, 0.18);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.8) inset,
+    0 16px 50px -18px rgba(26, 22, 14, 0.22);
+}
+
+/* Sticky navigation pill */
+.nav-pill {
+  background: rgba(245, 238, 221, 0.55);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  border: 1px solid rgba(26, 22, 14, 0.08);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.7) inset,
+    0 8px 32px -10px rgba(26, 22, 14, 0.15);
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+
+/* Subtle warm grain on the cream bg */
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+  background-image: radial-gradient(
+      circle at 20% 20%,
+      rgba(176, 122, 69, 0.08),
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(176, 122, 69, 0.06),
+      transparent 50%
+    );
+}
