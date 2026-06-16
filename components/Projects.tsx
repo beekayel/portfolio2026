@@ -21,14 +21,6 @@ const PROJECTS: Project[] = [
     href: "https://horologius.com"
   },
   {
-    name: "Petalon",
-    tag: "Featured · Live",
-    blurb:
-      "A crowdsourced reputation layer for LinkedIn job listings. Members vote on companies with three icons — green flag, red flag, or ghost — and the winning verdict appears next to company logos as they browse jobs. Built solo end-to-end: Next.js web app, Chrome extension, Supabase backend, Stripe subscriptions, and the brand from scratch.",
-    image: "/projects/Petalon.jpg",
-    href: "https://petalon.app"
-  },
-  {
     name: "Meal Prep Plan",
     tag: "Side project",
     blurb:
