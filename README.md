@@ -24,7 +24,6 @@ The site is configured **noindex / nofollow** via both `app/layout.tsx` metadata
 
 - Hero copy: `components/Hero.tsx`
 - Numbers strip: `components/MetricsStrip.tsx`
-- Case studies: `CASES` array in `components/SelectedWork.tsx`
 - Horologius stack: `STACK` array in `components/Horologius.tsx`
 - How I work prose: `components/HowIWork.tsx`
 - Toolbox lists: `GROUPS` array in `components/Toolbox.tsx`

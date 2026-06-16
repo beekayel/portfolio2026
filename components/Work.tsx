@@ -16,7 +16,7 @@ type Role = {
 const ROLES: Role[] = [
   {
     company: "TourRadar",
-    position: "Senior SEO Manager",
+    position: "Head of SEO",
     location: "Vienna, Austria · On-site",
     dates: "May 2025 — Present",
     logo: "/logos/tourradar.png",
