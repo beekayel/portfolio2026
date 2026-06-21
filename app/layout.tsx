@@ -23,9 +23,9 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dan Hodeanu — Senior SEO & Product",
+  title: "Dan Hodeanu — Head of SEO & Product",
   description:
-    "Senior SEO and product-minded operator based in Vienna. Currently looking for Senior SEO & Product roles.",
+    "Head of SEO and product-minded operator based in Vienna. Currently looking for Head of SEO & Product roles.",
   robots: { index: false, follow: false, googleBot: { index: false, follow: false } }
 };
 

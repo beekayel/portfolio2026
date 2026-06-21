@@ -48,7 +48,7 @@ export function About() {
           </h2>
           <div className="space-y-5 text-[1.05rem] md:text-[1.15rem] leading-[1.65] text-[var(--color-text-dim)] max-w-2xl">
             <p>
-              I'm a Senior SEO with a product mindset, based in Vienna. My main focus over the
+              I'm a Head of SEO with a product mindset, based in Vienna. My main focus over the
               last 8 years has been driving organic growth for international brands and
               marketplaces across multi-market websites in eCommerce, travel, and SaaS.
             </p>

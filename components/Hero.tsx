@@ -43,7 +43,7 @@ export function Hero() {
           className="mt-8 mx-auto max-w-2xl text-[1.15rem] md:text-[1.3rem] leading-[1.5] text-[var(--color-text-dim)]"
         >
           Eight years driving organic growth for international brands and marketplaces across
-          eCommerce, travel, and SaaS. Always on the watch for Senior SEO and Product roles.
+          eCommerce, travel, and SaaS. Always on the watch for Head of SEO and Product roles.
         </motion.p>
 
         <motion.div
